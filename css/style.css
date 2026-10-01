@@ -961,8 +961,9 @@ a:focus-visible, button:focus-visible {
   color: var(--cobalt);
 }
 .kl-axis-link::after {
-  content: " \2192";
+  content: "\2192";
   display: inline-block;
+  margin-left: 6px;
   transition: transform 0.2s ease;
 }
 .kl-axis:hover { border-top-color: var(--cobalt-light); }
