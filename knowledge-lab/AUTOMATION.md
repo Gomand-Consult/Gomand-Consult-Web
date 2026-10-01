@@ -27,15 +27,24 @@ merge lui-même avant que l'article soit en ligne (voir étape 9).
 4. **Créer le fichier** `knowledge-lab/<slug>.html` (le `slug` est celui du
    backlog).
 5. **Mettre à jour `knowledge-lab.html` :**
-   - Ajouter le nouvel article en tête de la grille `.card-grid` ("Derniers
-     articles") et retirer la 4ᵉ carte actuelle de la grille (elle ne disparaît
-     pas du site, elle bascule uniquement dans la section Archives).
-   - Ajouter une entrée en tête de la section Archives (`.method-list`), avec
-     la date au format `JJ.MM.AA` et la catégorie en légende. Ne jamais retirer
-     d'entrée des Archives — cette liste grandit indéfiniment.
+   - **"À lire en premier"** (`.card-grid`) : exactement **3** cartes, les 3
+     articles les plus récents. Ajouter le nouvel article en tête et retirer la
+     3ᵉ carte actuelle (elle ne disparaît pas du site : elle reste dans la liste
+     "Tous les articles").
+   - **"Tous les articles"** (`.kl-list`) : ajouter un bloc `<article
+     class="kl-item" data-category="...">` en tête de liste, en copiant les
+     blocs existants (date au format `JJ.MM.AA` dans `<time datetime="AAAA-MM-JJ">`,
+     catégorie dans `.kl-tag`, titre complet en lien, extrait = la
+     `meta description` de l'article, durée de lecture dans `.kl-meta`).
+     `data-category` doit valoir exactement : `branding`, `strategie-roi`,
+     `digitalisation` ou `pme-terrain`. Ne jamais retirer d'entrée de cette
+     liste — elle grandit indéfiniment.
+   - La section "Quatre axes de contenu" (`.kl-axes`) et les boutons de filtre
+     (`.kl-chip`) sont statiques côté HTML ; leurs compteurs sont calculés par
+     `js/knowledge-lab.js` à partir de la liste : **ne pas les modifier** et ne
+     rien compter à la main. Ne pas toucher au JS ni au CSS.
    - Mettre à jour le bloc JSON-LD `hasPart` de la page pour qu'il reflète
-     exactement les 4 articles actuellement dans la grille "Derniers articles"
-     (pas plus).
+     exactement les 3 articles actuellement dans "À lire en premier" (pas plus).
 6. **Mettre à jour `sitemap.xml`** : ajouter une ligne `<url>` pour le nouvel
    article, juste après `knowledge-lab.html`, avec `priority` `0.5`.
 7. **Mettre à jour `llms.txt`** : ajouter une ligne dans la section
