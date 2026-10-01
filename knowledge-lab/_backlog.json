@@ -1,7 +1,12 @@
 {
   "_comment": "Backlog éditorial du Knowledge Lab. Utilisé par la tâche planifiée qui publie 2 articles/semaine. Voir knowledge-lab/AUTOMATION.md pour le mode d'emploi complet. Rotation fixe des catégories : Branding & identité -> Stratégie & ROI -> Digitalisation -> PME & terrain -> (repeat). Ne pas réordonner manuellement sans mettre à jour 'rotation_index'.",
-  "rotation_index": 1,
-  "categories_order": ["Branding & identité", "Stratégie & ROI", "Digitalisation", "PME & terrain"],
+  "rotation_index": 5,
+  "categories_order": [
+    "Branding & identité",
+    "Stratégie & ROI",
+    "Digitalisation",
+    "PME & terrain"
+  ],
   "image_by_category": {
     "Branding & identité": "images/service-branding.jpg",
     "Stratégie & ROI": "images/service-audit.jpg",
@@ -20,30 +25,33 @@
     },
     {
       "id": 2,
-      "status": "todo",
+      "status": "published",
       "category": "Stratégie & ROI",
       "title": "Les 4P appliqués à une PME : un cadre simple pour ne rien oublier",
       "slug": "4p-marketing-pme-cadre-simple",
       "angle": "Reprendre Produit / Prix / Place / Promotion et les traduire concrètement pour un dirigeant de PME belge, avec un exemple chiffré. Montrer que le cadre sert surtout à repérer ce qu'on a oublié, pas à cocher des cases académiques.",
-      "cta_service": "services/plan-strategique.html"
+      "cta_service": "services/plan-strategique.html",
+      "published_date": "2026-10-01"
     },
     {
       "id": 3,
-      "status": "todo",
+      "status": "published",
       "category": "Digitalisation",
       "title": "Site vitrine ou site qui convertit : ce qui fait vraiment la différence",
       "slug": "site-vitrine-vs-site-qui-convertit",
       "angle": "Beaucoup de PME ont un site qui existe mais qui ne travaille pas commercialement. Expliquer la différence structurelle (parcours utilisateur, preuve sociale, appel à l'action clair) entre une vitrine passive et un site qui génère des contacts.",
-      "cta_service": "services/creation-site-web.html"
+      "cta_service": "services/creation-site-web.html",
+      "published_date": "2026-10-01"
     },
     {
       "id": 4,
-      "status": "todo",
+      "status": "published",
       "category": "PME & terrain",
       "title": "Indépendant ou PME : pourquoi le marketing ne se pense pas de la même façon",
       "slug": "independant-vs-pme-marketing-different",
       "angle": "Contraintes de temps et de budget très différentes entre un indépendant seul et une PME avec équipe. Donner des priorités adaptées à chaque situation plutôt qu'un conseil universel.",
-      "cta_service": "services/audit-marketing.html"
+      "cta_service": "services/audit-marketing.html",
+      "published_date": "2026-10-01"
     },
     {
       "id": 5,
