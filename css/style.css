@@ -844,3 +844,133 @@ a:focus-visible, button:focus-visible {
   color: var(--ink);
   margin-bottom: 20px;
 }
+
+/* ============ KNOWLEDGE LAB — filtres & liste d'articles ============ */
+.kl-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.kl-filters[hidden] { display: none; }
+.kl-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--white);
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.kl-chip:hover { border-color: var(--cobalt-light); }
+.kl-chip:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.kl-chip[aria-pressed="true"] {
+  background: var(--cobalt);
+  border-color: var(--cobalt);
+  color: var(--white);
+}
+.kl-count { font-size: 0.78rem; font-weight: 700; opacity: 0.75; }
+.kl-desc {
+  min-height: 1.6em;
+  font-size: 0.98rem;
+  color: var(--ink-soft);
+}
+.kl-status {
+  margin: 6px 0 24px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-faint);
+}
+.kl-desc:empty, .kl-status:empty { display: none; }
+.kl-list { display: grid; border-bottom: 1px solid var(--line); }
+.kl-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 32px;
+  padding: 30px 0;
+  border-top: 1px solid var(--line);
+  align-items: start;
+}
+.kl-item[hidden] { display: none; }
+.kl-date {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-faint);
+  padding-top: 4px;
+}
+.kl-tag {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9C4423;
+}
+.kl-item h3 { margin: 8px 0 8px; }
+.kl-item h3 a { color: var(--ink); }
+.kl-item h3 a:hover { color: var(--cobalt); text-decoration: underline; text-underline-offset: 3px; }
+.kl-item p { font-size: 0.94rem; max-width: 68ch; }
+.kl-meta {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+}
+@media (max-width: 900px) {
+  .kl-item { grid-template-columns: 60px 1fr; gap: 20px; }
+}
+@media (max-width: 720px) {
+  .kl-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    margin-right: -4px;
+    scrollbar-width: thin;
+  }
+  .kl-chip { flex: 0 0 auto; }
+  .kl-item { grid-template-columns: 1fr; gap: 6px; padding: 24px 0; }
+  .kl-date { padding-top: 0; }
+}
+
+/* Knowledge Lab — les 4 axes de contenu (cliquables, filtrent la liste) */
+.kl-axes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 48px;
+}
+.kl-axis {
+  display: block;
+  border-top: 1px solid var(--line);
+  padding: 24px 0;
+  transition: border-color 0.2s ease;
+}
+.kl-axis h3 { margin-bottom: 6px; transition: color 0.2s ease; }
+.kl-axis p { font-size: 0.92rem; }
+.kl-axis-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--cobalt);
+}
+.kl-axis-link::after {
+  content: " \2192";
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+.kl-axis:hover { border-top-color: var(--cobalt-light); }
+.kl-axis:hover h3 { color: var(--cobalt); }
+.kl-axis:hover .kl-axis-link::after { transform: translateX(3px); }
+.kl-axis:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+.kl-axis[aria-current="true"] { border-top-color: var(--gold); }
+.kl-axis[aria-current="true"] h3 { color: var(--cobalt); }
+@media (max-width: 720px) {
+  .kl-axes { grid-template-columns: 1fr; }
+}
