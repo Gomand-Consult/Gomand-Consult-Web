@@ -127,12 +127,14 @@
     },
     {
       "id": 13,
-      "status": "todo",
+      "status": "published",
       "category": "Branding & identité",
-      "title": "Ton de marque : pourquoi la plupart des PME écrivent comme leurs concurrents sans s'en rendre compte",
-      "slug": "ton-de-marque-ecrire-comme-ses-concurrents",
-      "angle": "Comment un ton de voix distinctif se définit concrètement (vocabulaire, longueur de phrase, degré de formalité) et se maintient sur tous les canaux, du site aux réseaux sociaux en passant par les devis.",
-      "cta_service": "services/branding-identite-marque.html"
+      "title": "Ton de marque et IA : comment écrire avec ChatGPT sans ressembler à tout le monde",
+      "slug": "ton-de-marque-ia-ecrire-sans-ressembler-aux-autres",
+      "angle": "Les marques utilisent les mêmes outils d'IA et finissent par écrire pareil. Méthode : une fiche de ton d'une page (message, mots maison, formules bannies, registre, texte de référence) à coller dans chaque demande, puis relecture humaine. Angle saisonnier : mailings de fin d'année.",
+      "cta_service": "services/branding-identite-marque.html",
+      "published_date": "2026-10-20",
+      "type": "evergreen"
     },
     {
       "id": 14,
