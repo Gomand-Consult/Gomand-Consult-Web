@@ -107,6 +107,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Conversion GA4 : clic sur le lien de réservation (uniquement si cookies analytiques acceptés)
+  document.querySelectorAll('[data-track="booking_click"]').forEach((el) => {
+    el.addEventListener('click', () => {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'booking_click', { link_url: el.href });
+      }
+    });
+  });
+
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.nav-desktop');
   if (toggle && nav) {
