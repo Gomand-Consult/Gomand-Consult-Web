@@ -93,13 +93,13 @@ Copier la structure d'un article existant, par exemple
 - `<title>` : `"<Titre> — Gomand Consult"`
 - `<meta name="description">` et tous les `og:`/`twitter:` équivalents :
   1 à 2 phrases, ton direct, qui donnent envie de cliquer sans être putaclic.
-- `<link rel="canonical">` et `og:url` : `https://gomandconsult.com/knowledge-lab/<slug>.html`
+- `<link rel="canonical">` et `og:url` : `https://gomandconsult.com/knowledge-lab/<slug>` (sans `.html` : Netlify sert les pages sans extension, et le canonical doit correspondre à l'URL finale)
 - `og:image` : voir `image_by_category` dans `_backlog.json` selon la catégorie
   de l'article.
 - JSON-LD `BlogPosting` : `datePublished`/`dateModified` = date du jour de
   publication, `articleSection` = catégorie exacte du backlog.
 - JSON-LD `BreadcrumbList` : 3 niveaux (Accueil / Knowledge Lab / titre court).
-- `breadcrumb` dans le corps : `<a href="../knowledge-lab.html">Knowledge Lab</a> / <titre court>`
+- `breadcrumb` dans le corps : `<a href="/knowledge-lab">Knowledge Lab</a> / <titre court>`
 - Hero : `eyebrow` = catégorie, `h1` = titre complet, `lede` = accroche de 1 à 2
   phrases, ligne signature `Par Anthony Gomand · <date en toutes lettres> · Environ
   X min de lecture` (X ≈ nombre de mots / 130, arrondi).
@@ -111,7 +111,7 @@ Copier la structure d'un article existant, par exemple
   lien en `target="_blank" rel="noopener noreferrer"`. Reprendre la mise en forme
   des listes des autres articles.
 - Section `.cta-band` standard identique à celle des autres articles (titre +
-  phrase + bouton "Prenons un café" vers `../contact.html`).
+  phrase + bouton "Prenons un café" vers `/contact`).
 - Header et footer : copier-coller exact depuis un article existant (ne jamais
   les réinventer).
 
@@ -170,3 +170,14 @@ considérées comme `evergreen`.
 - Ne jamais changer le design/CSS/JS du site dans le cadre de cette tâche : le
   scope est strictement la publication d'articles et la mise à jour des
   fichiers listés ci-dessus.
+
+
+## Convention d'URL (mise à jour du 23 octobre 2026)
+
+Toutes les URLs publiques sont **sans `.html`** : `/contact`, `/services/audit-marketing`,
+`/knowledge-lab/<slug>`. Ne jamais écrire `.html` dans un lien interne, un canonical, un
+`og:url`, un JSON-LD (`url`, `item`, `@id`), `sitemap.xml` ou `llms.txt` : les adresses en
+`.html` redirigent et Google les signale « page avec redirection ». Les liens internes sont
+absolus depuis la racine (`/contact`). Dans `sitemap.xml`, ajouter aussi une balise
+`<lastmod>` (date de publication, au format `AAAA-MM-JJ`). Les anciennes URLs de l'ancien
+site Wix sont redirigées par le fichier `_redirects` ; ne pas le supprimer.

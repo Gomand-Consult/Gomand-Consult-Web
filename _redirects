@@ -1,0 +1,17 @@
+# Redirections 301 des anciennes URLs (ancien site Wix) vers les pages actuelles.
+# Objectif : récupérer le trafic et les signaux Google des anciennes adresses.
+
+/qui-sommes-nous                         /a-propos                       301
+/actualites                              /knowledge-lab                  301
+/strategie-marketing                     /services/plan-strategique      301
+/plan-de-communication                   /services/plan-strategique      301
+/accompagnement-marketing-strategique    /services/plan-strategique      301
+/audit-marketing                         /services/audit-marketing       301
+/creation-site-web                       /services/creation-site-web     301
+/service-page/*                          /contact                        301
+
+# Anciennes pages légales (avec accents)
+/politique-de-cookies                    /politique-cookies              301
+/politique-de-confidentialite            /politique-confidentialite      301
+/politique-de-confidentialit%C3%A9       /politique-confidentialite      301
+/mentions-l%C3%A9gales                   /mentions-legales               301

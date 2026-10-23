@@ -22,11 +22,8 @@
     banner.className = 'cookie-banner';
     banner.setAttribute('role', 'dialog');
     banner.setAttribute('aria-label', 'Préférences cookies');
-    const depthPrefix = (location.pathname.includes('/services/') || location.pathname.includes('/knowledge-lab/')) ? '../' : '';
     banner.innerHTML =
-      '<p>Nous utilisons des cookies essentiels au fonctionnement du site et, avec votre accord, Google Analytics pour comprendre comment le site est utilisé. <a href="' +
-      depthPrefix +
-      'politique-cookies.html">En savoir plus</a>.</p>' +
+      '<p>Nous utilisons des cookies essentiels au fonctionnement du site et, avec votre accord, Google Analytics pour comprendre comment le site est utilisé. <a href="/politique-cookies">En savoir plus</a>.</p>' +
       '<div class="cookie-banner-actions">' +
       '<button type="button" class="btn btn-ghost" data-cookie-action="decline">Refuser</button>' +
       '<button type="button" class="btn btn-primary" data-cookie-action="accept">Accepter</button>' +
