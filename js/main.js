@@ -81,6 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
       })
         .then((res) => {
           if (!res.ok) throw new Error('submission failed');
+          // Conversion GA4 (n'existe que si le visiteur a accepté les cookies analytiques)
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'generate_lead', { form_name: 'contact' });
+          }
           const success = document.createElement('div');
           success.className = 'form-success';
           success.innerHTML =
