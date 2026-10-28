@@ -1,4 +1,34 @@
-# Redirections 301 des anciennes URLs (ancien site Wix) vers les pages actuelles.
+# 1) Domaine canonique : www -> sans www (une seule étape, pas de chaîne)
+http://www.gomandconsult.com/*   https://gomandconsult.com/:splat   301!
+https://www.gomandconsult.com/*  https://gomandconsult.com/:splat   301!
+
+# 2) Anciennes URL en .html -> URL propres (301 forcées, car les fichiers existent)
+/index.html                                                              /   301!
+/a-propos.html                                                           /a-propos   301!
+/contact.html                                                            /contact   301!
+/faq.html                                                                /faq   301!
+/knowledge-lab.html                                                      /knowledge-lab   301!
+/mentions-legales.html                                                   /mentions-legales   301!
+/politique-confidentialite.html                                          /politique-confidentialite   301!
+/politique-cookies.html                                                  /politique-cookies   301!
+/services.html                                                           /services   301!
+/services/audit-marketing.html                                           /services/audit-marketing   301!
+/services/branding-identite-marque.html                                  /services/branding-identite-marque   301!
+/services/coaching-mentoring.html                                        /services/coaching-mentoring   301!
+/services/consultant-marketing-pme-wallonie.html                         /services/consultant-marketing-pme-wallonie   301!
+/services/creation-site-web.html                                         /services/creation-site-web   301!
+/services/plan-strategique.html                                          /services/plan-strategique   301!
+/knowledge-lab/4p-marketing-pme-cadre-simple.html                        /knowledge-lab/4p-marketing-pme-cadre-simple   301!
+/knowledge-lab/audit-marketing-point-de-depart.html                      /knowledge-lab/audit-marketing-point-de-depart   301!
+/knowledge-lab/branding-oriente-roi.html                                 /knowledge-lab/branding-oriente-roi   301!
+/knowledge-lab/erreurs-marketing-pme-wallonie.html                       /knowledge-lab/erreurs-marketing-pme-wallonie   301!
+/knowledge-lab/independant-vs-pme-marketing-different.html               /knowledge-lab/independant-vs-pme-marketing-different   301!
+/knowledge-lab/nom-marque-reputation-par-ou-commencer.html               /knowledge-lab/nom-marque-reputation-par-ou-commencer   301!
+/knowledge-lab/seo-geo-ia-generatives.html                               /knowledge-lab/seo-geo-ia-generatives   301!
+/knowledge-lab/site-vitrine-vs-site-qui-convertit.html                   /knowledge-lab/site-vitrine-vs-site-qui-convertit   301!
+/knowledge-lab/ton-de-marque-ia-ecrire-sans-ressembler-aux-autres.html   /knowledge-lab/ton-de-marque-ia-ecrire-sans-ressembler-aux-autres   301!
+
+# 3) Anciennes URL de l'ancien site (Wix) -> pages actuelles.
 # Objectif : récupérer le trafic et les signaux Google des anciennes adresses.
 
 /qui-sommes-nous                         /a-propos                       301
@@ -17,3 +47,5 @@
 /politique-de-confidentialite            /politique-confidentialite      301
 /politique-de-confidentialit%C3%A9       /politique-confidentialite      301
 /mentions-l%C3%A9gales                   /mentions-legales               301
+/mentions-légales                        /mentions-legales               301
+/politique-de-confidentialité            /politique-confidentialite      301
