@@ -21,6 +21,7 @@ Gomand Consult accompagne les dirigeants de PME qui n'ont ni le temps ni l'exper
 ## Knowledge Lab
 
 - [Knowledge Lab](https://gomandconsult.com/knowledge-lab): Articles et ressources sur le branding, la stratégie marketing orientée ROI, la digitalisation et le terrain PME.
+- [Budget marketing PME 2027](https://gomandconsult.com/knowledge-lab/budget-marketing-realiste-pme): Comment fixer son budget marketing de l'an prochain : repères en % du chiffre d'affaires, trois blocs (socle, moteurs, tests) et exemple chiffré.
 - [Ton de marque et IA](https://gomandconsult.com/knowledge-lab/ton-de-marque-ia-ecrire-sans-ressembler-aux-autres): Comment garder une voix de marque reconnaissable en écrivant avec ChatGPT, grâce à une fiche de ton d'une page.
 - [Indépendant ou PME](https://gomandconsult.com/knowledge-lab/independant-vs-pme-marketing-different): Pourquoi le marketing ne se pense pas de la même façon selon votre taille de structure.
 - [Site vitrine ou site qui convertit](https://gomandconsult.com/knowledge-lab/site-vitrine-vs-site-qui-convertit): Ce qui distingue structurellement un site passif d'un site qui génère des contacts.

@@ -1,6 +1,6 @@
 {
   "_comment": "Backlog éditorial du Knowledge Lab. Utilisé par la tâche planifiée qui publie 2 articles/semaine. Voir knowledge-lab/AUTOMATION.md pour le mode d'emploi complet. Rotation fixe des catégories : Branding & identité -> Stratégie & ROI -> Digitalisation -> PME & terrain -> (repeat). Ne pas réordonner manuellement sans mettre à jour 'rotation_index'.",
-  "rotation_index": 5,
+  "rotation_index": 6,
   "categories_order": [
     "Branding & identité",
     "Stratégie & ROI",
@@ -64,12 +64,14 @@
     },
     {
       "id": 6,
-      "status": "todo",
+      "status": "published",
       "category": "Stratégie & ROI",
-      "title": "Comment fixer un budget marketing réaliste quand on démarre ou qu'on relance",
+      "title": "Budget marketing PME : comment le fixer pour 2027 sans sous-investir ni se précipiter",
       "slug": "budget-marketing-realiste-pme",
-      "angle": "Méthode simple pour calculer un budget cohérent avec le chiffre d'affaires et les objectifs, en évitant les deux pièges classiques : sous-investir par prudence, ou sur-dépenser par précipitation.",
-      "cta_service": "services/plan-strategique"
+      "angle": "Budget 2027 : repères en % du CA (SECO/BDC, Gartner), méthode en trois blocs socle/moteurs/tests, exemple chiffré d'un bureau d'études namurois fictif. Angle saisonnier : préparation du plan marketing de l'année suivante.",
+      "cta_service": "services/plan-strategique",
+      "published_date": "2026-11-04",
+      "type": "evergreen"
     },
     {
       "id": 7,
