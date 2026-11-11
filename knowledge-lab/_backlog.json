@@ -1,6 +1,6 @@
 {
   "_comment": "Backlog éditorial du Knowledge Lab. Utilisé par la tâche planifiée qui publie 2 articles/semaine. Voir knowledge-lab/AUTOMATION.md pour le mode d'emploi complet. Rotation fixe des catégories : Branding & identité -> Stratégie & ROI -> Digitalisation -> PME & terrain -> (repeat). Ne pas réordonner manuellement sans mettre à jour 'rotation_index'.",
-  "rotation_index": 6,
+  "rotation_index": 7,
   "categories_order": [
     "Branding & identité",
     "Stratégie & ROI",
@@ -164,6 +164,17 @@
       "slug": "etude-cas-repositionnement-conversation-commerciale",
       "angle": "Cas anonymisé illustrant un avant/après suite à un audit puis un repositionnement : comment les objections des prospects changent de nature une fois le message clarifié.",
       "cta_service": "services/audit-marketing"
+    },
+    {
+      "id": 17,
+      "status": "published",
+      "type": "actualite",
+      "published_date": "2026-11-11",
+      "category": "Digitalisation",
+      "title": "Horaires de fin d'année sur votre fiche Google : comment les régler avant les fêtes",
+      "slug": "fiche-google-horaires-fetes-fin-annee",
+      "angle": "Angle saisonnier fin d'année : régler les horaires exceptionnels de la fiche Google Business Profile (étapes, limites officielles), pourquoi l'IA de Google s'appuie sur cette fiche (Localogy, juin 2026), table des dates des fêtes 2026, contrôle de cohérence avec le site.",
+      "cta_service": "services/creation-site-web"
     }
   ]
 }
