@@ -70,7 +70,7 @@ footer{margin-top:26px;border-top:1px solid var(--line);padding-top:12px;font-si
 <div class="grid">
 <div><label for="net">Net pour une semaine de 7 nuits (€)</label><input type="text" id="net" inputmode="decimal" value="2000"></div>
 <div><label for="elec">Charges pour une semaine (€)</label><input type="text" id="elec" inputmode="decimal" value="70"><span class="hint">Facultatif. Électricité, eau, internet : ajoutées au prix par nuit</span></div>
-<div><label for="menage">Ménage net par séjour (€)</label><input type="text" id="menage" inputmode="decimal" value="100"><span class="hint">Facultatif. Airbnb l'ajoute à part, hors du prix par nuit</span></div>
+<div><label for="menage">Ménage net par séjour (€)</label><input type="text" id="menage" inputmode="decimal" value="100"><span class="hint">Facultatif. Airbnb l'ajoute à part. Sa commission s'applique aussi au ménage : le montant affiché est donc plus élevé que le net souhaité</span></div>
 <div><label for="minn">Séjour minimum (nuits)</label><input type="text" id="minn" inputmode="decimal" value="3"><span class="hint">Détermine les durées du tableau ci-dessous</span></div>
 </div>
 </section>
@@ -99,9 +99,9 @@ footer{margin-top:26px;border-top:1px solid var(--line);padding-top:12px;font-si
 
 <section class="card out" aria-live="polite">
 <h2>Ce que vous saisissez dans Airbnb</h2>
-<div class="row"><div>Prix par nuit<small>Paramètres de prix, prix de base</small></div><div class="val big" id="rNuit"></div></div>
+<div class="row"><div>Prix par nuit<small>Paramètres de prix, prix de base, hors taxe de séjour</small></div><div class="val big" id="rNuit"></div></div>
 <div class="row"><div>Frais de ménage<small>Paramètres de prix, frais de ménage</small></div><div class="val" id="rMenage"></div></div>
-<div class="row"><div>Une semaine vue par le voyageur<small>7 nuits, réduction comprise, ménage en plus</small></div><div class="val" id="rSem"></div></div>
+<div class="row"><div>Une semaine vue par le voyageur<small>7 nuits, réduction comprise, ménage et taxe de séjour en plus</small></div><div class="val" id="rSem"></div></div>
 <div class="row"><div>Ce que vous touchez pour 7 nuits<small>Contrôle : net + charges + draps, ménage en plus</small></div><div class="val" id="rNet"></div></div>
 </section>
 
@@ -109,9 +109,9 @@ footer{margin-top:26px;border-top:1px solid var(--line);padding-top:12px;font-si
 <h2>Ce que paie le voyageur selon la durée</h2>
 <table><thead><tr><th>Séjour</th><th>Voyageur paie</th><th>Par nuit</th><th>Vous touchez</th></tr></thead><tbody id="tbody"></tbody></table>
 <p class="note" id="warn" style="color:var(--coral);font-weight:400"></p>
-<p class="note">Hors ménage. La réduction à la semaine ne s'applique qu'à partir de 7 nuits : un séjour plus court paie le prix par nuit complet. Une ligne en corail signale un séjour plus court qui coûte plus cher qu'un séjour plus long.</p>
+<p class="note">Hors ménage et hors taxe de séjour. La réduction à la semaine ne s'applique qu'à partir de 7 nuits : un séjour plus court paie le prix par nuit complet. Une ligne en corail signale un séjour plus court qui coûte plus cher qu'un séjour plus long.</p>
 <p class="formula">Prix par nuit = ((net + charges) ÷ 7 + draps par nuit) ÷ (1 − frais Airbnb) ÷ (1 − réduction). Frais de ménage = ménage net ÷ (1 − frais Airbnb). Draps par nuit = tarif par lit × nombre de lits ÷ nuits du séjour type.</p>
-<p class="note">Estimation indicative, à vérifier dans votre compte Airbnb avant de publier vos prix. Les frais et règles de la plateforme peuvent changer. Aucune donnée saisie n'est enregistrée : tout est calculé sur votre appareil.</p>
+<p class="note">Estimation indicative, à vérifier dans votre compte Airbnb avant de publier vos prix. Les frais et règles de la plateforme peuvent changer. Quand Airbnb collecte la taxe de séjour, comme en France, elle est ajoutée au prix vu par le voyageur et reversée directement par Airbnb : elle n'entre ni dans votre prix par nuit ni dans le calcul des frais. Aucune donnée saisie n'est enregistrée : tout est calculé sur votre appareil.</p>
 </section>
 
 <section class="card" style="text-align:center">
