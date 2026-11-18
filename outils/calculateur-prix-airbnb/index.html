@@ -102,12 +102,13 @@ footer{margin-top:26px;border-top:1px solid var(--line);padding-top:12px;font-si
 <div class="row"><div>Prix par nuit<small>Paramètres de prix, prix de base, hors taxe de séjour</small></div><div class="val big" id="rNuit"></div></div>
 <div class="row"><div>Frais de ménage<small>Paramètres de prix, frais de ménage</small></div><div class="val" id="rMenage"></div></div>
 <div class="row"><div>Une semaine vue par le voyageur<small>7 nuits, réduction comprise, ménage et taxe de séjour en plus</small></div><div class="val" id="rSem"></div></div>
-<div class="row"><div>Ce que vous touchez pour 7 nuits<small>Contrôle : net + charges + draps, ménage en plus</small></div><div class="val" id="rNet"></div></div>
+<div class="row"><div>Ce que vous touchez pour 7 nuits, hors ménage<small>Contrôle : net + charges + draps</small></div><div class="val" id="rNet"></div></div>
+<div class="row"><div>Total touché, ménage compris<small>Ajoute les frais de ménage nets : net + charges + draps + ménage</small></div><div class="val" id="rTot"></div></div>
 </section>
 
 <section class="card">
 <h2>Ce que paie le voyageur selon la durée</h2>
-<table><thead><tr><th>Séjour</th><th>Voyageur paie</th><th>Par nuit</th><th>Vous touchez</th></tr></thead><tbody id="tbody"></tbody></table>
+<table><thead><tr><th>Séjour</th><th>Voyageur paie</th><th>Par nuit</th><th>Vous touchez, hors ménage</th></tr></thead><tbody id="tbody"></tbody></table>
 <p class="note" id="warn" style="color:var(--coral);font-weight:400"></p>
 <p class="note">Hors ménage et hors taxe de séjour. La réduction à la semaine ne s'applique qu'à partir de 7 nuits : un séjour plus court paie le prix par nuit complet. Une ligne en corail signale un séjour plus court qui coûte plus cher qu'un séjour plus long.</p>
 <p class="formula">Prix par nuit = ((net + charges) ÷ 7 + draps par nuit) ÷ (1 − frais Airbnb) ÷ (1 − réduction). Frais de ménage = ménage net ÷ (1 − frais Airbnb). Draps par nuit = tarif par lit × nombre de lits ÷ nuits du séjour type.</p>

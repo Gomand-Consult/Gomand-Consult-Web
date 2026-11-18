@@ -6,7 +6,7 @@ function calc(){
 var fee=num('frais')/100,disc=num('remise')/100,k=(1-fee)*(1-disc);
 var nn=num('dNuits');if(nn<=0)nn=7;
 var tb=$('tbody'),warn=$('warn');
-if(k<=0||fee<0||disc<0||fee>=1||disc>=1){['rNuit','rMenage','rSem','rNet'].forEach(function(i){$(i).textContent='—'});tb.innerHTML='';warn.textContent='Vérifiez les pourcentages saisis.';return}
+if(k<=0||fee<0||disc<0||fee>=1||disc>=1){['rNuit','rMenage','rSem','rNet','rTot'].forEach(function(i){$(i).textContent='—'});tb.innerHTML='';warn.textContent='Vérifiez les pourcentages saisis.';return}
 var base=(num('net')+num('elec'))/7+num('dEur')*num('dLits')/nn;
 var nuit=Math.round(base/k);
 var sem=nuit*7*(1-disc);
@@ -14,6 +14,7 @@ $('rNuit').textContent=eur(nuit);
 $('rMenage').textContent=eur(num('menage')/(1-fee));
 $('rSem').textContent=eur(sem);
 $('rNet').textContent=eur(sem*(1-fee));
+$('rTot').textContent=eur(sem*(1-fee)+num('menage'));
 var min=Math.max(1,Math.min(7,Math.round(num("minn"))||1)),lens=[],n;
 for(n=min;n<=min+4&&n<7;n++)lens.push(n);
 [7,8,10,14].forEach(function(d){if(lens.indexOf(d)<0)lens.push(d)});
