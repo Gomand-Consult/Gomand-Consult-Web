@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr-be">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculateur de prix par nuit Airbnb — Gomand Consult</title>
+<meta name="description" content="Calculez le prix par nuit à saisir dans Airbnb à partir de ce que vous souhaitez toucher : frais, ménage, draps et réduction à la semaine. Outil gratuit.">
+<link rel="canonical" href="https://gomandconsult.com/outils/calculateur-prix-airbnb/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculateur de prix par nuit Airbnb — Gomand Consult">
+<meta property="og:description" content="Calculez le prix par nuit à saisir dans Airbnb à partir de ce que vous souhaitez toucher : frais, ménage, draps et réduction à la semaine. Outil gratuit.">
+<meta property="og:url" content="https://gomandconsult.com/outils/calculateur-prix-airbnb/">
+<meta property="og:image" content="https://gomandconsult.com/images/hero-cafe.jpg">
+<meta property="og:locale" content="fr_BE">
+<meta property="og:site_name" content="Gomand Consult">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap">
+<link rel="icon" href="/images/favicon.jpg" type="image/jpeg">
+<style>
+:root{--cobalt:#324A59;--coral:#E86A4A;--paper:#F1F3F5;--ink:#252A2B;--soft:#4E6469;--faint:#536770;--line:#D6DCDF;--mist:#C9D5E3}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Montserrat',system-ui,sans-serif;font-weight:300;line-height:1.6}
+.wrap{max-width:880px;margin:0 auto;padding:28px 20px 56px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+header img{height:30px;width:auto}
+.tag{font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--cobalt)}
+h1{font-weight:600;font-size:clamp(1.6rem,4.5vw,2.2rem);letter-spacing:-.01em;line-height:1.15;color:var(--cobalt);margin:36px 0 14px;text-wrap:balance}
+.rule{height:1px;background:var(--line);position:relative;margin-bottom:18px}
+.rule::after{content:"";position:absolute;left:0;top:-.5px;height:2px;width:90px;background:var(--coral)}
+.lede{color:var(--soft);margin:0 0 26px;max-width:60ch;text-wrap:pretty}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px 24px;margin-bottom:14px}
+h2{font-size:.95rem;font-weight:600;color:var(--cobalt);margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px 22px}
+label{display:block;font-size:.8rem;font-weight:400;color:var(--ink);margin-bottom:5px}
+.hint{display:block;font-size:.72rem;color:var(--faint);margin-top:4px}
+input[type=text]{width:100%;font:inherit;font-weight:400;font-size:1rem;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;text-align:right}
+input[type=text]:focus,button:focus-visible{outline:2px solid var(--cobalt);outline-offset:2px}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg button{font:inherit;font-weight:400;font-size:.85rem;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:10px;padding:9px 14px;cursor:pointer;transition:.2s}
+.seg button[aria-pressed=true]{background:var(--cobalt);border-color:var(--cobalt);color:#fff}
+.out{background:var(--cobalt);border-color:var(--cobalt);color:#fff;border-left:3px solid var(--coral)}
+.out h2{color:#fff}
+.row{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:12px 0;border-top:1px solid #4C6677}
+.row:first-of-type{border-top:0;padding-top:0}
+.row small{display:block;color:var(--mist);font-size:.72rem}
+.val{font-weight:600;font-size:1.25rem;white-space:nowrap}
+.val.big{font-size:2.1rem}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+th{font-weight:600;text-align:right;color:var(--cobalt);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:0 0 8px}
+th:first-child,td:first-child{text-align:left}
+td{text-align:right;padding:9px 0;border-top:1px solid var(--line);font-weight:400}
+tr.flag td{color:var(--coral);font-weight:600}
+.note{font-size:.76rem;color:var(--soft);margin:12px 0 0}
+.formula{font-size:.78rem;color:var(--soft);margin-top:18px}
+.cta{display:inline-block;background:var(--cobalt);color:#fff;text-decoration:none;font-weight:600;font-size:.9rem;padding:12px 22px;border-radius:10px;transition:.2s}.cta:hover{background:var(--ink)}
+footer{margin-top:26px;border-top:1px solid var(--line);padding-top:12px;font-size:.72rem;color:var(--faint);display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
+@media(max-width:520px){.card{padding:18px 16px}.val.big{font-size:1.8rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><img src="/images/logo-full.png" alt="Gomand Consult"><span class="tag">Outil de prix Airbnb</span></header>
+<h1>Calculateur de prix par nuit Airbnb</h1>
+<div class="rule"></div>
+<p class="lede">Indiquez ce que vous souhaitez toucher. Le prix par nuit et les frais de ménage à saisir dans Airbnb se calculent automatiquement. Les valeurs affichées sont des exemples : remplacez-les par les vôtres.</p>
+
+<section class="card">
+<h2>Ce que vous voulez toucher</h2>
+<div class="grid">
+<div><label for="net">Net pour une semaine de 7 nuits (€)</label><input type="text" id="net" inputmode="decimal" value="2000"></div>
+<div><label for="elec">Charges pour une semaine (€)</label><input type="text" id="elec" inputmode="decimal" value="70"><span class="hint">Facultatif. Électricité, eau, internet : ajoutées au prix par nuit</span></div>
+<div><label for="menage">Ménage net par séjour (€)</label><input type="text" id="menage" inputmode="decimal" value="100"><span class="hint">Facultatif. Airbnb l'ajoute à part, hors du prix par nuit</span></div>
+<div><label for="minn">Séjour minimum (nuits)</label><input type="text" id="minn" inputmode="decimal" value="3"><span class="hint">Détermine les durées du tableau ci-dessous</span></div>
+</div>
+</section>
+
+<section class="card">
+<h2>Frais Airbnb et réduction</h2>
+<div class="seg" id="seg">
+<button type="button" data-f="15,5" aria-pressed="true">Frais payés par l'hôte, 15,5 %</button>
+<button type="button" data-f="3" aria-pressed="false">Frais partagés, environ 3 %</button>
+</div>
+<span class="hint">Le modèle dépend de votre compte : vérifiez-le dans vos paramètres Airbnb. Avec des frais partagés, le voyageur voit en plus ses propres frais sur le prix affiché.</span>
+<div class="grid" style="margin-top:16px">
+<div><label for="frais">Frais de service à votre charge (%)</label><input type="text" id="frais" inputmode="decimal" value="15,5"><span class="hint">Modifiable. Vide : aucun frais pris en compte</span></div>
+<div><label for="remise">Réduction à la semaine, dès 7 nuits (%)</label><input type="text" id="remise" inputmode="decimal" value="10"><span class="hint">Facultatif. Réglée dans Airbnb, Réductions</span></div>
+</div>
+</section>
+
+<section class="card">
+<h2>Draps et linge</h2>
+<div class="grid">
+<div><label for="dEur">Tarif du pack par lit (€)</label><input type="text" id="dEur" inputmode="decimal" value="26"><span class="hint">Un pack par lit, quel que soit le nombre de personnes</span></div>
+<div><label for="dLits">Nombre de lits à faire</label><input type="text" id="dLits" inputmode="decimal" value="0"><span class="hint">Facultatif. 0 : draps non inclus dans le prix</span></div>
+<div><label for="dNuits">Nuits du séjour type</label><input type="text" id="dNuits" inputmode="decimal" value="7"><span class="hint">Durée sur laquelle le coût des draps est réparti</span></div>
+</div>
+</section>
+
+<section class="card out" aria-live="polite">
+<h2>Ce que vous saisissez dans Airbnb</h2>
+<div class="row"><div>Prix par nuit<small>Paramètres de prix, prix de base</small></div><div class="val big" id="rNuit"></div></div>
+<div class="row"><div>Frais de ménage<small>Paramètres de prix, frais de ménage</small></div><div class="val" id="rMenage"></div></div>
+<div class="row"><div>Une semaine vue par le voyageur<small>7 nuits, réduction comprise, ménage en plus</small></div><div class="val" id="rSem"></div></div>
+<div class="row"><div>Ce que vous touchez pour 7 nuits<small>Contrôle : net + charges + draps, ménage en plus</small></div><div class="val" id="rNet"></div></div>
+</section>
+
+<section class="card">
+<h2>Ce que paie le voyageur selon la durée</h2>
+<table><thead><tr><th>Séjour</th><th>Voyageur paie</th><th>Par nuit</th><th>Vous touchez</th></tr></thead><tbody id="tbody"></tbody></table>
+<p class="note" id="warn" style="color:var(--coral);font-weight:400"></p>
+<p class="note">Hors ménage. La réduction à la semaine ne s'applique qu'à partir de 7 nuits : un séjour plus court paie le prix par nuit complet. Une ligne en corail signale un séjour plus court qui coûte plus cher qu'un séjour plus long.</p>
+<p class="formula">Prix par nuit = ((net + charges) ÷ 7 + draps par nuit) ÷ (1 − frais Airbnb) ÷ (1 − réduction). Frais de ménage = ménage net ÷ (1 − frais Airbnb). Draps par nuit = tarif par lit × nombre de lits ÷ nuits du séjour type.</p>
+<p class="note">Estimation indicative, à vérifier dans votre compte Airbnb avant de publier vos prix. Les frais et règles de la plateforme peuvent changer. Aucune donnée saisie n'est enregistrée : tout est calculé sur votre appareil.</p>
+</section>
+
+<section class="card" style="text-align:center">
+<h2>Un doute sur votre tarification ?</h2>
+<p class="lede" style="margin:0 auto 16px">Positionnement, prix, annonce, photos : je vous accompagne sur toute la mise en ligne de votre logement.</p>
+<a class="cta" href="/contact">Prenons un café</a>
+</section>
+
+<footer><span>Gomand Consult SRL · gomandconsult.com</span><span>Estimation indicative, sans valeur de conseil financier</span></footer>
+</div>
+<script src="/outils/calculateur-prix-airbnb/calculateur.js" defer></script>
+</body>
+</html>
