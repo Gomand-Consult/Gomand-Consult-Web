@@ -1,6 +1,6 @@
 {
   "_comment": "Backlog éditorial du Knowledge Lab. Utilisé par la tâche planifiée qui publie 2 articles/semaine. Voir knowledge-lab/AUTOMATION.md pour le mode d'emploi complet. Rotation fixe des catégories : Branding & identité -> Stratégie & ROI -> Digitalisation -> PME & terrain -> (repeat). Ne pas réordonner manuellement sans mettre à jour 'rotation_index'.",
-  "rotation_index": 7,
+  "rotation_index": 8,
   "categories_order": [
     "Branding & identité",
     "Stratégie & ROI",
@@ -175,6 +175,17 @@
       "slug": "fiche-google-horaires-fetes-fin-annee",
       "angle": "Angle saisonnier fin d'année : régler les horaires exceptionnels de la fiche Google Business Profile (étapes, limites officielles), pourquoi l'IA de Google s'appuie sur cette fiche (Localogy, juin 2026), table des dates des fêtes 2026, contrôle de cohérence avec le site.",
       "cta_service": "services/creation-site-web"
+    },
+    {
+      "id": 18,
+      "status": "published",
+      "type": "actualite",
+      "published_date": "2026-11-18",
+      "category": "PME & terrain",
+      "title": "Black Friday : une PME belge doit-elle y participer ?",
+      "slug": "black-friday-pme-belge-participer-ou-non",
+      "angle": "Angle saisonnier : Black Friday le 27 novembre 2026. Calcul de l'effet d'une remise sur la marge (exemple fictif), trois options (remise ciblée, offre sans rabais, abstention assumée), repères Test-Achats 2025, règle belge du prix antérieur sur 30 jours.",
+      "cta_service": "services/plan-strategique"
     }
   ]
 }
