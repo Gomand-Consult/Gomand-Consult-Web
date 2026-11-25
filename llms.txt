@@ -21,6 +21,7 @@ Gomand Consult accompagne les dirigeants de PME qui n'ont ni le temps ni l'exper
 ## Knowledge Lab
 
 - [Knowledge Lab](https://gomandconsult.com/knowledge-lab): Articles et ressources sur le branding, la stratégie marketing orientée ROI, la digitalisation et le terrain PME.
+- [Rebranding d'une PME : les signaux qu'il est temps de changer (et ceux qui ne le sont pas)](https://gomandconsult.com/knowledge-lab/rebranding-pme-signaux-quand-changer): Quand un rebranding se justifie (fusion, repositionnement, nom inadapté) ou non, comment choisir entre rafraîchissement et refonte, et l'effet d'un nouveau logo sur une marque déposée au Benelux.
 - [Black Friday : une PME belge doit-elle y participer ?](https://gomandconsult.com/knowledge-lab/black-friday-pme-belge-participer-ou-non): Participer ou non au Black Friday : calculer l'effet d'une remise sur la marge, comparer trois options et respecter les règles belges d'annonce de réduction.
 - [Horaires de fin d'année sur votre fiche Google : comment les régler avant les fêtes](https://gomandconsult.com/knowledge-lab/fiche-google-horaires-fetes-fin-annee): Comment régler les horaires exceptionnels de sa fiche Google Business Profile avant les fêtes, et pourquoi les réponses IA s'y fient.
 - [Budget marketing PME 2027](https://gomandconsult.com/knowledge-lab/budget-marketing-realiste-pme): Comment fixer son budget marketing de l'an prochain : repères en % du chiffre d'affaires, trois blocs (socle, moteurs, tests) et exemple chiffré.

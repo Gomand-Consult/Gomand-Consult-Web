@@ -1,6 +1,6 @@
 {
   "_comment": "Backlog éditorial du Knowledge Lab. Utilisé par la tâche planifiée qui publie 2 articles/semaine. Voir knowledge-lab/AUTOMATION.md pour le mode d'emploi complet. Rotation fixe des catégories : Branding & identité -> Stratégie & ROI -> Digitalisation -> PME & terrain -> (repeat). Ne pas réordonner manuellement sans mettre à jour 'rotation_index'.",
-  "rotation_index": 8,
+  "rotation_index": 9,
   "categories_order": [
     "Branding & identité",
     "Stratégie & ROI",
@@ -93,12 +93,14 @@
     },
     {
       "id": 9,
-      "status": "todo",
+      "status": "published",
       "category": "Branding & identité",
-      "title": "Rebranding : les signaux qui indiquent qu'il est temps (et ceux qui ne le sont pas)",
-      "slug": "rebranding-signaux-quand-changer",
-      "angle": "Distinguer les vraies raisons stratégiques de changer d'identité (positionnement devenu obsolète, fusion, nouveau marché) des fausses bonnes raisons (lassitude du dirigeant, effet de mode).",
-      "cta_service": "services/branding-identite-marque"
+      "title": "Rebranding d'une PME : les signaux qu'il est temps de changer (et ceux qui ne le sont pas)",
+      "slug": "rebranding-pme-signaux-quand-changer",
+      "angle": "Rebranding PME : cinq signaux légitimes, fausses bonnes raisons, grille refresh vs rebranding, budget médian (La Fabrique du Net) et effet sur la marque déposée Benelux (BOIP). Angle saisonnier : bilan de fin d'année avant budget 2027.",
+      "cta_service": "services/branding-identite-marque",
+      "published_date": "2026-11-25",
+      "type": "evergreen"
     },
     {
       "id": 10,
